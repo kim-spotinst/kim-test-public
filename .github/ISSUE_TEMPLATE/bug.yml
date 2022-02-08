@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug in Spot Shared Library 
+description: Report a bug in Angular Material or the CDK
 title: "bug(COMPONENT): TITLE"
 labels: ["needs triage"]
 body:
@@ -28,6 +28,9 @@ body:
     attributes:
       label: Reproduction
       description: |
+        **Use StackBlitz to reproduce your issue:**
+        - [Components](https://stackblitz.com/fork/components-issue)
+        - [Harnesses](https://stackblitz.com/fork/harness-issue)
       value: |
         Steps to reproduce:
         1. 
@@ -46,5 +49,17 @@ body:
     attributes:
       label: Actual Behavior
       description: What behavior did you actually see?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: You can use `ng version` command.
+      value: |
+        - Angular:
+        - CDK/Material:
+        - Browser(s):
+        - Operating System (e.g. Windows, macOS, Ubuntu):
     validations:
       required: true
